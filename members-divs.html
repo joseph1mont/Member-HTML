@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Registration</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <link rel="stylesheet" href="./css/membersStyle-final_layout.css">
+  </head>
+  <body>
+    <div class="members">
+      <div class="members-header">
+        <div class="members-header d-flex justify-content-center align-items-center">
+          <h2><span>MEMBERS </span>AREA</h2>
+        </div>
+        <div class="container">
+          <div class="garage"><a href="#"></a></div>
+        </div>
+      </div>
+      <div class="container text-center">
+        <div class="row d-flex justify-content-center">
+          <div class="icons icon-1 col-md-2 col-sm-3 d-flex"><a href="#"><div class="text">Dashboard</div></a></div>
+          <div class="icons icon-2 col-md-2 col-sm-3 d-flex"><a href="#"><div class="text">My Reports</div></a></div>
+          <div class="icons icon-3 col-md-2 col-sm-3 d-flex"><a href="#"><div class="text">Bill of Sale</div></a></div>
+          <div class="icons icon-4 col-md-2 col-sm-3 d-flex"><a href="#"><div class="text">Order History</div></a></div>
+          <div class="icons icon-5 col-md-2 col-sm-3 d-flex"><a href="#"><div class="text">Pricing Plans</div></a></div>
+          <div class="icons icon-6 col-md-2 col-sm-3 d-flex"><a href="#"><div class="text">My Account</div></a></div>
+        </div>
+      </div>
+        <div class="container information mb-4">
+          <div class="row">
+            <div class="information-left col-12 col-md-4">
+              <div class="container information-left__header">
+                <h5><span>1986 Chevrolet</span></h5>
+                <h6>Monte Carlo SS</h6>
+                <a href="#">100.603 miles <i class='fas fa-pen'></i></a>
+                <div class="glove-box"><i class="fas fa-cogs"></i>Glove Box</div>
+              </div>
+              <hr class="main-hr mt-3">
+                <div class="information-left__content">
+                  <div class="information-left__content-btn active" id="registration-btn" onclick="displayRegistration()">
+                    <div class="d-inline-block left-info__block">
+                      <h5 class="i-icons i-icon1 float-left"><span>Registration</span></h5>
+                      <div class="time-left"><div id="countdown1"></div>
+                    </div>
+                    </div>
+                    <div class="progress">
+                      <div id="dynamic1" class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                        <span id="current-progress1"></span>
+                      </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="information-left__content-btn" id="oilChange-btn" onclick="displayOilChange()">
+                    <div class="d-inline-block left-info__block">
+                      <h5 class="i-icons i-icon2 float-left"><span>Oil Change</span></h5>
+                      <div class="time-left"><div id="countdown2"></div>
+                    </div>
+                    </div>
+                    <div class="progress">
+                      <div id="dynamic2" class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                        <span id="current-progress2"></span>
+                      </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="information-left__content-btn" id="tireRotation-btn" onclick="displayTireRotation()">
+                    <div class="d-inline-block left-info__block">
+                      <h5 class="i-icons i-icon3 float-left"><span>Tire Rotation</span></h5>
+                      <div class="time-left"><div id="countdown3"></div>
+                    </div>
+                    </div>
+                    <div class="progress">
+                      <div id="dynamic3" class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                        <span id="current-progress3"></span>
+                      </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="d-inline-block left-info__block forth-block my-4">
+                  <h5 class="i-icons i-icon4 float-left"><span>History Based Value</span></h5>
+                  <h5 class="float-right"><span>$ 2600</span></h5>
+                  <div class="float-right time-left mt-3">Trade-In Value</div>
+                  <div class="second-line float-left ml-4">by verify my VIN</div>
+                </div>
+                <hr>
+                <div class="d-inline-block left-info__block my-4">
+                  <h5 class="i-icons i-icon5"><span>No Open Recalls</span></h5>
+                  <div class="second-line float-left ml-4">As of 11/7/2019</div>
+                </div>
+                <hr>
+                <div class="text-center my-4">Something Wrong?
+                  <a href="#">Get Help</a>
+                </div>
+              </div>
+            </div>
+            <div class="information-right p-0 col-12 col-md-8" id="registration-div">
+              <div class="container information-right__header">
+                <div class="row d-flex justify-content-between pt-2 py-3">
+                  <div class="col-12 col-sm-4"><h3>REGISTRATION</h3></div>
+                  <div class="col-6 col-sm-4"><a href="#" class="float-right"><i class='fas fa-plus'></i>ADD REGISTRATION</a></div>
+                  <div class="col-6 col-sm-4"><a href="#" class="float-right"><i class='fas fa-tools'></i>EDIT REGISTRATION INTERVAL</a></div>
+                </div>
+              </div>
+              <div class="container information-right__middle">
+                <div class="information-right__top-middle-item row d-flex justify-content-center mx-0">
+                  <div class="container">
+                    <div class="connection connection-div_left"></div>
+                    <div class="connection connection-div_middle"></div>
+                    <div class="connection connection-div_right"></div>
+                  </div>
+                  <div class="information-right__top-middle-item1 col-xs-8 col-sm-5">
+                    <div class="float-left information-right__middle-item-text">
+                      <span>
+                        <h6>previous Owner</h6>
+                        <p><span>Purchased:</span> 2016 | <span>Where:</span> WA</p>
+                        <p><span>Owned:</span> 08/15/2018 - 03/06/2019</p>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="information-right__top-middle-item1 col-xs-8 col-sm-5">
+                    <div class="float-left information-right__middle-item-text">
+                      <span>
+                        <h5>Current Owner</h5>
+                        <p><span>Purchased:</span> 2016 | <span>Where:</span> WA</p>
+                        <p><span>Qwned:</span> 08/15/2018 - 03/06/2019</p>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="row d-flex justify-content-center mx-0">
+                  <div class="information-right__middle-item1 registeration-page-block col-xs-8 col-sm-5">
+                    <div>
+                        <h5 class="info">Registration Expires</h5>
+                        <p>Date:</p>
+                        <h4>03/08/2020</h4>
+                        <p class="mb-2">California</p>
+                        <p class="mb-2">Motor Vehicle Dept.</p>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <div class="row">
+                        <div class="col-12"><a href="#" class="btn">Find Shop</a></div>
+                        <div class="col-12 d-flex justify-content-center"><p>Not Connect? <a href="#">GET HELP</a></p></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="information-right__middle-item1 registeration-page-block col-xs-8 col-sm-5">
+                    <div>
+                        <h5>Last Registration</h5>
+                        <p>Date:</p>
+                        <h4>02/27/2019</h4>
+                        <p class="mb-2"><a href="#">California Motor Vehicle Dept.</a></p>
+                        <p class="mb-1">Motor Vehicle Dept.</p>
+                        <p class="no-margin"><span>Title issued or Updated</span></p>
+                        <p class="no-margin"><span>New Owner Report</span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- Oil Change Div -->
+              <div class="information-right p-0 col-12 col-md-8" id="oilChange-div">
+                <div class="container information-right__header">
+                  <div class="row d-flex justify-content-between pt-2 py-3">
+                    <div class="col-12 col-sm-4"><h3>Oil Change</h3></div>
+                    <div class="col-6 col-sm-4"><a href="#" class="float-right"><i class='fas fa-plus'></i>ADD REGISTRATION</a></div>
+                    <div class="col-6 col-sm-4"><a href="#" class="float-right"><i class='fas fa-tools'></i>EDIT REGISTRATION INTERVAL</a></div>
+                  </div>
+                </div>
+                <div class="container information-right__middle">
+                  <div class="information-right__top-middle-item row d-flex justify-content-center mx-0">
+                    <div class="information-right__middle-item1 col-xs-8 col-sm-5">
+                      <div>
+                          <h5 class="info">Next Service</h5>
+                          <p>Date:</p>
+                          <h4>09/06/2019</h4>
+                          <p>Mileage:</p>
+                          <h4>138,910</h4>
+                          <p class="instant mb-2"><a href="#">Valvoline Instant Oil Change</a> <span>(Recent Shop)</span></p>
+                          <p class="rate-text">4.7</p><p class="rate"><span class="verified">22 Verified Reviews</span></p>
+                          <p class="d-inline-block">1611 N Belt W, Belleville, IL 62226 | (618) 235-0388</p>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <div class="row">
+                          <div class="col-12"><a href="#" class="btn">Schedule Service</a></div>
+                          <div class="col-12 d-flex justify-content-center"><p>Not Connect? <a href="#"><span>GET HELP</span></a></p></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="information-right__middle-item1 col-xs-8 col-sm-5">
+                      <div>
+                          <h5>Last Registration</h5>
+                          <p>Date:</p>
+                          <h4>05/25/2019</h4>
+                          <p>Mileage:</p>
+                          <h4>132,410</h4>
+                          <p class="mb-2"><a href="#">Valvoline Instant Oil Change</a></p>
+                          <p class="no-margin"><span>Brake light bulb(s) replaced</span></p>
+                          <p class="no-margin mb-4"><span>Oil and filter changed</span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tire Rotation Div -->
+              <div class="information-right p-0 col-12 col-md-8" id="tireRotation-div">
+                <div class="container information-right__header">
+                  <div class="row d-flex justify-content-between pt-2 py-3">
+                    <div class="col-12 col-sm-4"><h3>Tire Rotation</h3></div>
+                    <div class="col-6 col-sm-4"><a href="#" class="float-right"><i class='fas fa-plus'></i>ADD REGISTRATION</a></div>
+                    <div class="col-6 col-sm-4"><a href="#" class="float-right"><i class='fas fa-tools'></i>EDIT REGISTRATION INTERVAL</a></div>
+                  </div>
+                </div>
+                <div class="container information-right__middle">
+                  <div class="information-right__top-middle-item row d-flex justify-content-center mx-0">
+                    <div class="information-right__middle-item1 col-xs-8 col-sm-5">
+                      <div>
+                          <h5 class="info">Next Service</h5>
+                          <p>Date:</p>
+                          <h4>12/03/2019</h4>
+                          <p>Mileage:</p>
+                          <h4>144,518</h4>
+                          <p class="instant mb-2"><a href="#">Valvoline Instant Oil Change</a> <span>(Recent Shop)</span></p>
+                          <p class="rate-text">4.7</p><p class="rate"><span class="verified">22 Verified Reviews</span></p>
+                          <p class="d-inline-block">1611 N Belt W, Belleville, IL 62226 | (618) 235-0388</p>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <div class="row">
+                          <div class="col-12"><a href="#" class="btn">Schedule Service</a></div>
+                          <div class="col-12 d-flex justify-content-center"><p>Not Connect? <a href="#"><span>GET HELP</span></a></p></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="information-right__middle-item1 col-xs-8 col-sm-5">
+                      <div>
+                          <h5>Last Registration</h5>
+                          <p>Date:</p>
+                          <h4>02/27/2019</h4>
+                          <p>Mileage:</p>
+                          <h4>144,518</h4>
+                          <p class="mb-2"><a href="#">Valvoline Instant Oil Change</a></p>
+                          <ul>
+                            <li>Brake rotor(s) replaced</li>
+                            <li>Front brake pads replaced</li>
+                            <li>Catalytic converter replaced</li>
+                            <li>Drive belt(s) replaced</li>
+                            <li>Brake pads replaced</li>
+                            <li>Tire condition and pressure checked</li>
+                            <li>Four tires balanced</li>
+                            <li>Four tires mounted</li>
+                            <li>Emission system checked</li>
+                            <li>Serpentine belt replaced</li>
+                          </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+            </div>
+          <div class="col-12 information-right__middle-item2">
+            <p><span>What's a VIN Number (Vehicle Identification Number)?</span></p>
+            <p>A vehicle identification number (VIN) is a unique code that is assigned to every motor vehicle when it's manufactured. The VIN is a 17-character string of letters and numbers without intervening spaces or the letters Q (q), I (i), and O (o); these are omitted to avoid confusion with the numerals 0 and 1. Each section of the VIN provides a specific piece of information about the vehicle, including the year, country, and factory of manufacture; the make and model; and the serial number. VINs are usually printed in a single line.</p>
+          </div>
+          <div class="col-12 col-md-7">
+            <div class="information-right__middle-item3">
+              <div class="row">
+                <div class="col-6">
+                  <ul>
+                    <li>How many characters:</li>
+                    <li>Where to find:</li>
+                    <li>First digit stands for:</li>
+                  </ul>
+                </div>
+                <div class="col-6">
+                  <ul>
+                    <li>17 (digits and capital letters)</li>
+                    <li>Dashboard on the driver's side</li>
+                    <li>Country of manufacturer</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+        </div>
+
+
+          <div class="container where-is-my-vin d-flex justify-content-center">
+            <div class="where-is-my-vin-title">
+              <h4><span>WHERE IS MY VIN?</span></h4>
+              <h6>the four most common locations</h6>
+            </div>
+            <img src="./members_image_final_layout/red_car.png" class="img-fluid" alt="where is my vin image responsive">
+            <div class="img-text_top float-left"><p>Under hood (front on engine block of most gasoline cars)</p></div>
+            <div class="img-text_bottom-left float-left"><p>Driver's side interior dash (most gasoline cars)</p></div>
+            <div class="img-text_bottom-middle"><p>Front end of frame (older cars)</p></div>
+            <div class="img-text_bottom-right float-right"><p>Driver's side door pillar (older cars)</p></div>
+          </div>
+          <div class="col-12 information-bottom p-4">
+            <p><span>Used Auto Reports</span></p>
+            <p>Used Auto Reports is a platform that provides users with the overall information about a vehicle’s history. Through Used Auto Reports , the users can check the history of any car, truck or motor cycle by generating the vehicle history report. This information is very useful for the buyers as well as sellers as it helps the users by providing all the details which are crucial while buying or selling a used automobile. It is North America’s most comprehensive Car, Truck, Motorcycle History Verification Tool that informs the user to know about the background of any used vehicle.</p>
+          </div>
+          <div class="col-12 information-bottom px-4">
+            <p><span>Why Used Auto Reports?</span></p>
+            <p>Used Auto Reports is an unbiased report that reveals the overall information about any vehicle’s background. You can check various information about any vehicle such as vehicle registration specifications, recall information, loan history of the vehicle, mileage records, how old the vehicle is, the number of previous owners, accident or auction records. This way, you get to know all the necessary details about the vehicle you are planning to buy or sell. Simply provide the vehicles VIN number in order to pull up an instant detailed vehicle report on any car, truck or motorcycle.</p>
+          </div>
+          <div class="col-12 information-bottom p-4">
+            <p><span>How Does It Work</span></p>
+            <p>Used Auto Reports has data for more than 500+ million registered vehicles in North America. This data has been consolidated from multiple authoritative sources with data that is updated in real time. To get a detailed report about any used vehicle, simply enter the vehicle’s VIN number; as soon as the VIN number is entered, the user will get a detailed history report of the requested vehicle.</p>
+          </div>
+          <div class="col-12 information-bottom px-4">
+            <p><span>Benefits of Used Auto Reports</span></p>
+            <p>Used Auto Reports is very beneficial to any user who is looking to buy or sell a used vehicle. The data provided by Used Auto Reports helps buyers to make a more informed decision while buying a used car. It provides used vehicle history by generating a vehicle history report. You can check the background of any vehicle online at a low cost within a minute. This way you get a quick and easy access to information about any kind of vehicle registered in North America. It gives you authentic data which gives buyers and sellings the confidence in finalizing the transaction.</p>
+          </div>
+          <div class="col-12 information-bottom p-4">
+            <p><span>Used Auto Reports Methodology</span></p>
+            <p>Being the most advanced and comprehensive used car and used truck history check, Used Auto Reports accesses the most up to date record available on the vehicle. If you are planning to buying or selling a used vehicle, you need to be well-informed about its background, and this is where Used Auto Reports comes in. It provides an unbiased vehicle history report and gives information about its past. Used Auto Reports takes used vehicle’s VIN number as an input to generate a comprehensive report for that vehicle. The report contains various information about the car or bike such as car registration details, vehicle loan details, vehicle specifications, vehicle recalls & accidents and many other important points. This way, you can check the history of any used vehicle.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="./js/progressbar.min.js"></script>
+    <script src="./js/members.js"></script>
+    <script src="./js/registration-btns.js"></script>
+  </body>
+</html>
