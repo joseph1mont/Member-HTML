@@ -1,6 +1,6 @@
 Responsive PSD to HTML Website Conversion
 
-![Screenshot](screenshot.png)
+![Screenshot](screenshot.jpg)
 
 HTML Page Contains:
 - Sidebar Nav as Buttons has loading bar
